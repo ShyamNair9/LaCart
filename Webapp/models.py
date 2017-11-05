@@ -9,8 +9,8 @@ class Fridge(models.Model):
 
 class ShoppingCart(models.Model):
 	item = models.CharField(max_length=500)
-	quantity = models.IntegerField()
+	quantity = models.IntegerField(default = 1)
 	unit = models.CharField(max_length = 10)
-	
+
 
 
